@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+input {
+  width: 60px;
+}
+#status {
+  margin-top: 1em;
+}
