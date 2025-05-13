@@ -1,5 +1,5 @@
 {
-  "name": "sistema-temperatura-api",
+  "name": "embebidos-departamental",
   "version": "1.0.0",
   "description": "API de control para el proyecto de temperatura con DHT11",
   "main": "server.js",
