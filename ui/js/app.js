@@ -15,6 +15,6 @@ async function fetchData() {
       });
     }
 
-    // Polling cada 2 segundos
+    // cada 2 segundos manda a llamar la api
     setInterval(fetchData, 2000);
     fetchData();

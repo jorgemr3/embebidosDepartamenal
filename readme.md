@@ -29,3 +29,7 @@ Copiar `.env.example` a `.env` y ajustar:
   ```bash
   npm start
   ```
+
+## UI
+
+![alt text](image.png)
