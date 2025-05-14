@@ -1,0 +1,119 @@
+/* body {
+  font-family: sans-serif;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+input {
+  width: 60px;
+}
+#status {
+  margin-top: 1em;
+} */
+
+:root {
+  --font-family: 'Helvetica Neue', Arial, sans-serif;
+  --color-bg: #f9f9f9;
+  --color-primary: #333;
+  --color-secondary: #555;
+  --color-accent: #0066cc;
+  --color-border: #e0e0e0;
+  --spacing-unit: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;       
+  align-items: center;           
+  row-gap: var(--spacing-unit); 
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--spacing-unit);
+}
+
+.container {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  padding: calc(var(--spacing-unit) * 2);
+  max-width: 360px;
+  width: 100%;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-unit);
+  color: var(--color-secondary);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--spacing-unit);
+  font-size: 1rem;
+  color: var(--color-secondary);
+}
+
+input[type="number"] {
+  width: 80px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.375rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="number"]:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+  outline: none;
+}
+
+button {
+  background-color: var(--color-accent);
+  color: #fff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+#status {
+  margin-top: calc(var(--spacing-unit) * 1.5);
+  font-size: 0.95rem;
+  color: var(--color-secondary);
+}
+
+#status span {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
